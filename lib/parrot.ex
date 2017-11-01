@@ -1,18 +1,7 @@
 defmodule Parrot do
-  @moduledoc """
-  Documentation for Parrot.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Parrot.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def main(_args) do
+    IO.puts "app started"
+    receive do
+    end
   end
 end

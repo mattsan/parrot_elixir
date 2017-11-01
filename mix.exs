@@ -4,6 +4,7 @@ defmodule Parrot.Mixfile do
   def project do
     [
       app: :parrot,
+      escript: [main_module: Parrot],
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
@@ -13,7 +14,7 @@ defmodule Parrot.Mixfile do
 
   def application do
     [
-      extra_applications: [:logger, :cowboy],
+      extra_applications: [:logger],
       mod: {Parrot.Application, []}
     ]
   end
